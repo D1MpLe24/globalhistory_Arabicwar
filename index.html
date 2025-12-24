@@ -13,8 +13,10 @@
         .container { height: 100vh; width: 100%; transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }
         section { height: 100vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; box-sizing: border-box; text-align: center; position: relative; }
         
+        /* Фон как на первой странице */
+        .bg-hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=1200'); background-size: cover; background-position: center; }
+        
         .bg-emerald { background: linear-gradient(135deg, #064e3b 0%, #022c22 100%); border-left: 10px solid var(--gold); }
-        .bg-image-desert { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=1200'); background-size: cover; }
         .bg-pattern { background: #0a0a0a; background-image: radial-gradient(var(--emerald) 0.5px, transparent 0.5px); background-size: 20px 20px; }
 
         h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold); margin-bottom: 10px; }
@@ -31,107 +33,30 @@
 <body>
 
     <div class="container" id="mainContainer">
-        <section class="bg-image-desert">
+        <section class="bg-hero">
             <h1>Арабский Халифат</h1>
-            <p style="font-size: 1.4rem; color: var(--white);">От пророчества к мировой империи</p>
+            <p style="font-size: 1.4rem; color: var(--white);">Великая империя Востока</p>
             <div style="margin-top: 50px; border: 2px solid var(--gold); padding: 20px 40px; background: rgba(6, 78, 59, 0.4);">
                 <b>Автор:</b> Абен Алан<br><b>Группа:</b> ПО-12
             </div>
         </section>
 
-        <section class="bg-emerald">
-            <h2>Начало пути</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Объединение:</b> В VII веке Пророк Мухаммед объединил разрозненные арабские племена под знаменем ислама.</li>
-                    <li><b>Медина и Мекка:</b> Создание первой исламской общины (уммы), ставшей фундаментом будущего государства.</li>
-                    <li><b>Идея:</b> Религиозный порыв превратил кочевников в мощную политическую силу.</li>
-                </ul>
-            </div>
-        </section>
+        <section class="bg-emerald"><h2>Начало пути</h2><div class="content-box"><ul><li><b>Объединение:</b> VII век, Пророк Мухаммед объединил племена.</li><li><b>Идея:</b> Ислам как мощная политическая и духовная сила.</li></ul></div></section>
+        <section class="bg-pattern"><h2>Эпоха завоеваний</h2><div class="content-box"><ul><li><b>Византия и Персия:</b> Сокрушительный удар по старым империям.</li><li><b>Границы:</b> От Испании до Индии за одно столетие.</li></ul></div></section>
+        <section class="bg-emerald"><h2>Праведный Халифат</h2><div class="content-box"><ul><li><b>Выборность:</b> Время правления первых четырех халифов.</li><li><b>Система:</b> Формирование основ исламского государства.</li></ul></div></section>
+        <section class="bg-pattern"><h2>Омейяды в Дамаске</h2><div class="content-box"><ul><li><b>Централизация:</b> Арабский язык становится государственным.</li><li><b>Архитектура:</b> Время постройки великих мечетей.</li></ul></div></section>
+        <section class="bg-emerald"><h2>Золотой век Аббасидов</h2><div class="content-box"><ul><li><b>Багдад:</b> Новый центр мировой культуры и торговли.</li><li><b>Многонациональность:</b> Участие всех народов в управлении.</li></ul></div></section>
+        <section class="bg-pattern"><h2>Власть и Шариат</h2><div class="content-box"><ul><li><b>Теократия:</b> Сочетание духовной и светской власти халифа.</li><li><b>Право:</b> Единые законы для всей огромной территории.</li></ul></div></section>
+        <section class="bg-emerald"><h2>Дом Мудрости</h2><div class="content-box"><ul><li><b>Наука:</b> Прорывы в алгебре, медицине и астрономии.</li><li><b>Переводы:</b> Сохранение античного наследия для Европы.</li></ul></div></section>
+        <section class="bg-pattern"><h2>Упадок империи</h2><div class="content-box"><ul><li><b>Раздробленность:</b> Появление независимых эмиратов.</li><li><b>1258 г.:</b> Падение Багдада под натиском монголов.</li></ul></div></section>
 
-        <section class="bg-pattern">
-            <h2>Блицкриг в пустыне</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Византия и Сасаниды:</b> За короткий срок арабы отвоевали Сирию, Египет и Ирак у двух ослабших сверхдержав.</li>
-                    <li><b>Секрет успеха:</b> Высокая мобильность легкой конницы и лояльность местного населения к новым налогам (джизья).</li>
-                    <li><b>Границы:</b> К середине VIII века Халифат простирался от Испании до границ Индии и Китая.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-emerald">
-            <h2>Эпоха четырех халифов</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Выборность:</b> Период правления Абу Бакра, Омара, Османа и Али.</li>
-                    <li><b>Омар ибн аль-Хаттаб:</b> При нем созданы основные институты управления, суды и налоговая система.</li>
-                    <li><b>Единство:</b> Время, когда религиозный авторитет и государственная власть были неразделимы.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-pattern">
-            <h2>Династия из Дамаска</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Централизация:</b> Столица перенесена в Дамаск. Арабский язык стал официальным языком империи.</li>
-                    <li><b>Экспансия на Запад:</b> Завоевание Пиренейского полуострова (Андалусия) и походы вглубь Европы.</li>
-                    <li><b>Архитектура:</b> Строительство Купола Скалы в Иерусалиме и мечети Омейядов.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-emerald">
-            <h2>Золотой век Багдада</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Революция 750 г.:</b> Приход к власти Аббасидов и перенос столицы в новый город — Багдад.</li>
-                    <li><b>Интернационализм:</b> Ислам перестал быть религией только арабов; персы и тюрки стали играть ключевую роль в управлении.</li>
-                    <li><b>Экономика:</b> Расцвет морской торговли через Индийский океан.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-pattern">
-            <h2>Власть Халифа и Визиря</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Теократия:</b> Халиф считался заместителем Пророка на земле и обладал высшей властью.</li>
-                    <li><b>Визири и Диваны:</b> Сложная бюрократическая система, заимствованная у персов.</li>
-                    <li><b>Шариат:</b> Система права, регулирующая все сферы жизни — от семьи до торговли.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-emerald">
-            <h2>Дом Мудрости</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Переводческое движение:</b> Сохранение и перевод трудов Аристотеля, Платона и греческих медиков.</li>
-                    <li><b>Ал-Хорезми:</b> Создание алгебры и введение цифр, которые мы называем «арабскими».</li>
-                    <li><b>Медицина:</b> Ибн Сина (Авиценна) написал каноны, по которым Европа училась 500 лет.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-pattern">
-            <h2>Упадок и раздробленность</h2>
-            <div class="content-box">
-                <ul>
-                    <li><b>Сепаратизм:</b> Отделение Испании (Кордовский эмират), Египта (Фатимиды) и Ирана.</li>
-                    <li><b>Тюркские гвардейцы:</b> Халифы стали заложниками собственной наемной армии.</li>
-                    <li><b>1258 год:</b> Взятие Багдада монголами Хулагу-хана положило конец Аббасидскому халифату.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-emerald">
+        <section class="bg-hero">
             <h2>Мировое значение</h2>
             <div class="content-box" style="text-align: center;">
-                <p>Арабский халифат создал мост между античностью и Возрождением, подарив миру современную науку, архитектуру и глобальную мировую религию.</p>
-                <p style="color: var(--gold); margin-top: 30px; font-weight: 600;">Спасибо за внимание!</p>
+                <p>Халифат оставил глубокий след в истории, создав фундамент современной науки и объединив миллионы людей единой культурой.</p>
+                <div style="margin-top: 30px; font-size: 1.4rem; color: var(--gold); border-top: 1px solid var(--gold); padding-top: 15px;">
+                    <b>Выполнил:</b> Абен Алан <br> Группа ПО-12
+                </div>
             </div>
         </section>
     </div>
