@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арабский Халифат — Абен Алан</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --emerald: #064e3b; --sand: #d4a373; --gold: #f59e0b; --white: #f8fafc; --dark: #020617;
+        }
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; font-family: 'Montserrat', sans-serif; background: var(--dark); color: var(--white); overflow: hidden; touch-action: none; }
+        .container { height: 100vh; width: 100%; transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }
+        section { height: 100vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; box-sizing: border-box; text-align: center; position: relative; }
+        
+        .bg-emerald { background: linear-gradient(135deg, #064e3b 0%, #022c22 100%); border-left: 10px solid var(--gold); }
+        .bg-image-desert { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=1200'); background-size: cover; }
+        .bg-pattern { background: #0a0a0a; background-image: radial-gradient(var(--emerald) 0.5px, transparent 0.5px); background-size: 20px 20px; }
+
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold); margin-bottom: 10px; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--sand); margin-bottom: 25px; }
+        .content-box { background: rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 25px; max-width: 900px; width: 85%; backdrop-filter: blur(12px); text-align: left; border: 1px solid rgba(212, 163, 115, 0.3); }
+        li { font-size: 1.15rem; margin-bottom: 15px; padding-left: 35px; position: relative; line-height: 1.5; }
+        li::before { content: '☪'; color: var(--gold); position: absolute; left: 0; font-size: 1.3rem; }
+        b { color: var(--sand); }
+        
+        .mobile-nav { position: fixed; right: 20px; bottom: 30px; display: flex; flex-direction: column; gap: 10px; z-index: 100; }
+        .nav-btn { width: 50px; height: 50px; background: rgba(212, 163, 115, 0.2); border: 1px solid var(--sand); border-radius: 50%; color: var(--sand); display: flex; justify-content: center; align-items: center; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="mainContainer">
+        <section class="bg-image-desert">
+            <h1>Арабский Халифат</h1>
+            <p style="font-size: 1.4rem; color: var(--white);">От пророчества к мировой империи</p>
+            <div style="margin-top: 50px; border: 2px solid var(--gold); padding: 20px 40px; background: rgba(6, 78, 59, 0.4);">
+                <b>Автор:</b> Абен Алан<br><b>Группа:</b> ПО-12
+            </div>
+        </section>
+
+        <section class="bg-emerald">
+            <h2>Начало пути</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Объединение:</b> В VII веке Пророк Мухаммед объединил разрозненные арабские племена под знаменем ислама.</li>
+                    <li><b>Медина и Мекка:</b> Создание первой исламской общины (уммы), ставшей фундаментом будущего государства.</li>
+                    <li><b>Идея:</b> Религиозный порыв превратил кочевников в мощную политическую силу.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-pattern">
+            <h2>Блицкриг в пустыне</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Византия и Сасаниды:</b> За короткий срок арабы отвоевали Сирию, Египет и Ирак у двух ослабших сверхдержав.</li>
+                    <li><b>Секрет успеха:</b> Высокая мобильность легкой конницы и лояльность местного населения к новым налогам (джизья).</li>
+                    <li><b>Границы:</b> К середине VIII века Халифат простирался от Испании до границ Индии и Китая.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-emerald">
+            <h2>Эпоха четырех халифов</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Выборность:</b> Период правления Абу Бакра, Омара, Османа и Али.</li>
+                    <li><b>Омар ибн аль-Хаттаб:</b> При нем созданы основные институты управления, суды и налоговая система.</li>
+                    <li><b>Единство:</b> Время, когда религиозный авторитет и государственная власть были неразделимы.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-pattern">
+            <h2>Династия из Дамаска</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Централизация:</b> Столица перенесена в Дамаск. Арабский язык стал официальным языком империи.</li>
+                    <li><b>Экспансия на Запад:</b> Завоевание Пиренейского полуострова (Андалусия) и походы вглубь Европы.</li>
+                    <li><b>Архитектура:</b> Строительство Купола Скалы в Иерусалиме и мечети Омейядов.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-emerald">
+            <h2>Золотой век Багдада</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Революция 750 г.:</b> Приход к власти Аббасидов и перенос столицы в новый город — Багдад.</li>
+                    <li><b>Интернационализм:</b> Ислам перестал быть религией только арабов; персы и тюрки стали играть ключевую роль в управлении.</li>
+                    <li><b>Экономика:</b> Расцвет морской торговли через Индийский океан.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-pattern">
+            <h2>Власть Халифа и Визиря</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Теократия:</b> Халиф считался заместителем Пророка на земле и обладал высшей властью.</li>
+                    <li><b>Визири и Диваны:</b> Сложная бюрократическая система, заимствованная у персов.</li>
+                    <li><b>Шариат:</b> Система права, регулирующая все сферы жизни — от семьи до торговли.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-emerald">
+            <h2>Дом Мудрости</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Переводческое движение:</b> Сохранение и перевод трудов Аристотеля, Платона и греческих медиков.</li>
+                    <li><b>Ал-Хорезми:</b> Создание алгебры и введение цифр, которые мы называем «арабскими».</li>
+                    <li><b>Медицина:</b> Ибн Сина (Авиценна) написал каноны, по которым Европа училась 500 лет.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-pattern">
+            <h2>Упадок и раздробленность</h2>
+            <div class="content-box">
+                <ul>
+                    <li><b>Сепаратизм:</b> Отделение Испании (Кордовский эмират), Египта (Фатимиды) и Ирана.</li>
+                    <li><b>Тюркские гвардейцы:</b> Халифы стали заложниками собственной наемной армии.</li>
+                    <li><b>1258 год:</b> Взятие Багдада монголами Хулагу-хана положило конец Аббасидскому халифату.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-emerald">
+            <h2>Мировое значение</h2>
+            <div class="content-box" style="text-align: center;">
+                <p>Арабский халифат создал мост между античностью и Возрождением, подарив миру современную науку, архитектуру и глобальную мировую религию.</p>
+                <p style="color: var(--gold); margin-top: 30px; font-weight: 600;">Спасибо за внимание!</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="mobile-nav">
+        <div class="nav-btn" onclick="moveSlide('up')">↑</div>
+        <div class="nav-btn" onclick="moveSlide('down')">↓</div>
+    </div>
+
+    <script>
+        let currentSlide = 0; const totalSlides = 10;
+        const container = document.getElementById('mainContainer');
+        function moveSlide(direction) {
+            if (direction === 'down' && currentSlide < totalSlides - 1) currentSlide++;
+            else if (direction === 'up' && currentSlide > 0) currentSlide--;
+            container.style.transform = `translateY(-${currentSlide * 100}vh)`;
+        }
+        window.addEventListener('keydown', (e) => { if (e.key === 'ArrowDown') moveSlide('down'); if (e.key === 'ArrowUp') moveSlide('up'); });
+        window.addEventListener('wheel', (e) => { if (e.deltaY > 0) moveSlide('down'); else moveSlide('up'); });
+        let touchStartY = 0;
+        window.addEventListener('touchstart', e => touchStartY = e.touches[0].clientY);
+        window.addEventListener('touchend', e => {
+            let touchEndY = e.changedTouches[0].clientY;
+            if (touchStartY - touchEndY > 50) moveSlide('down');
+            if (touchEndY - touchStartY > 50) moveSlide('up');
+        });
+    </script>
+</body>
+</html>
